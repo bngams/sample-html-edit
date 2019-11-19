@@ -1,0 +1,19 @@
+/* lecture sequentielle + priorité hiérarchique (!important > id > class > element) */
+h1 {
+    text-align: left !important;
+}
+
+/* margin = marge extérieure */
+p {
+    margin-top: 10px;
+}
+
+/* padding */
+span {
+    padding: 10px;
+}
+
+.custom-img {
+    width: 100px;
+    height: auto;
+}

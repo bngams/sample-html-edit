@@ -1,0 +1,124 @@
+<!-- document defintion -->
+<!DOCTYPE html>
+<!-- html => element racine -->
+<html lang="en">
+
+<!-- metadonnées de la page -->
+
+<head>
+    <!-- metas techniques: affichage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- titre de la page -->
+    <title>My first web page</title>
+
+    <!-- regles de style css -->
+    <style>
+        /* id */
+        #main-title {
+            text-align: center;
+        }
+
+        /* classes */
+        .text {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        /* element */
+        p {
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- lier un fichiers css qui contient des règles d'affichage -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- partie visible de la page -->
+
+<body>
+    <!-- balises <tag></tag> -->
+    <!-- balises autofermante <br>, <br/> -->
+
+
+    <!-- 
+        balises de type bloc
+        <div></div>
+        <table></table>
+        <p></p>
+     -->
+
+
+    <!-- 
+        balises de type inlne
+        <span></span>, <img/>, <strong></strong>
+    -->
+
+    <!-- 
+        attributs
+        - attributs personnalisés
+        - attributs courants
+            id => élément unique (sert en css #id)
+            class => type d'élément qui revient dans la page (sert en css .classe)
+            title => "légende", toolti^p
+        - attributs spécifiques
+            img
+                alt = texte de remplacement / par défaut
+                src => source de l'image
+            a
+                href
+                target
+     -->
+
+
+    <!-- titres h1 à h6 -->
+    <!-- 1 par page -->
+    <!-- id = attribut valeur unique; traduit en css: #main-title -->
+    <h1 id="main-title">Titre niveau 1</h1>
+
+    <!-- group = custom attribute; h2[group='sub'] -->
+    <h2 group="sub">Subtitle</h2>
+    <h3>Sub sub title</h3>
+
+    <!-- class = attribut; traduit en css .text -->
+    <p class="text">My first paragraph <br>
+        <span>with span</span> <br>
+        <a href="http:///google.com" target="">Faire un recherche</a>
+    </p>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+
+    <ol>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ol>
+
+    <p>My first paragraph <img class="custom-img" src="assets/img/HTML5_logo.png" alt="illustration" title="légende">
+    </p>
+
+    <!-- tableaux -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- formulaires -->
+
+    <!-- script js -->
+    <script type="text/javascript">
+        alert("Hello");
+    </script>
+    <!-- script js via un fichier -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
